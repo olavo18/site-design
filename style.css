@@ -1,0 +1,135 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para a logo */
+.logo img {
+    width: 150px;   /* Largura máxima da imagem */
+    height: auto;   /* Altura será ajustada automaticamente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+}
+
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Seção de serviços */
+.services {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Seção de botões */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+/* Estilos para os botões sociais */
+.btn-social {
+    background-color: #007bff;
+}
+
+.btn-social:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    .services h2 {
+        font-size: 1.8rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
