@@ -1,0 +1,126 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte e fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #222;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff007f; /* Cor do TikTok */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Seção de Contato */
+.contact-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* Estilos para os botões */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo de botões genérico */
+.btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos personalizados para cada botão */
+.tiktok {
+    background-color: #000;
+    border: 2px solid #00f2ea;
+}
+
+.tiktok:hover {
+    background-color: #00f2ea;
+    color: #000;
+}
+
+.instagram {
+    background-color: #feda77;
+    border: 2px solid #f56040;
+}
+
+.instagram:hover {
+    background-color: #f56040;
+    color: #fff;
+}
+
+.facebook {
+    background-color: #1877f2;
+    border: 2px solid #1877f2;
+}
+
+.facebook:hover {
+    background-color: #1877f2;
+    color: #fff;
+}
+
+.email {
+    background-color: #333;
+    border: 2px solid #666;
+}
+
+.email:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
