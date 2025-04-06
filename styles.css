@@ -1,25 +1,26 @@
 /* Estilos gerais do site */
 body {
-    background-color: #f0f0f0;  /* Fundo claro */
-    font-family: Arial, sans-serif;
-    color: #333;                /* Cor do texto escuro para contraste */
+    background-color: #f4f4f4;  /* Fundo claro cinza */
+    font-family: 'Poppins', sans-serif; /* Fonte mais moderna e legível */
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 /* Estilo do header */
 header {
-    background-color: #333;     /* Fundo escuro para destacar a logo */
+    background-color: #333; /* Cor de fundo escura do header */
     padding: 20px;
     text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para o header */
 }
 
 /* Estilo da logo */
 header .logo img {
-    width: 200px;              /* Ajusta o tamanho da logo */
+    width: 200px;
     height: auto;
-    border-radius: 10px;       /* Bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);  /* Sombra para dar destaque */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos de navegação */
@@ -37,26 +38,138 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500; /* Peso de fonte mais suave */
+    font-family: 'Poppins', sans-serif; /* Fonte consistente */
+}
+
+/* Estilo para o botão de WhatsApp */
+.whatsapp-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.whatsapp {
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Fonte do botão */
+}
+
+/* Hover para o botão do WhatsApp */
+.whatsapp:hover {
+    background-color: #128C7E; /* Cor escura do WhatsApp ao passar o mouse */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+/* Estilo para a seção de Visualizar Arte */
+#arte {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px solid transparent;
+    background-image: linear-gradient(45deg, #ff6f61, #e1e8ed);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Bordas tecnológicas com efeito neon */
+#arte::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6f61, #ff9d2f, #ff6f61, #8e44ad);
+    border-radius: 20px;
+    z-index: -1;
+    animation: neon-border 2s infinite ease-in-out;
+}
+
+/* Animação para o efeito de borda neon */
+@keyframes neon-border {
+    0% {
+        box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Estilo para o botão de Visualizar Arte */
+.arte-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.arte {
+    background-color: #FF6F61; /* Cor vibrante para visualizar arte */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Fonte do botão */
+}
+
+/* Hover para o botão de Visualizar Arte */
+.arte:hover {
+    background-color: #E04E3C; /* Cor escura para o efeito hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Efeito de elevação */
 }
 
 /* Estilo das seções */
 section {
-    padding: 20px;
+    padding: 30px;
     margin-top: 30px;
     text-align: center;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border: 3px solid transparent;
+    position: relative;
+    z-index: 0;
+    background-image: linear-gradient(45deg, #8e44ad, #6c5ce7);
+    font-family: 'Poppins', sans-serif;
 }
 
-section h1 {
-    font-size: 24px;
-    color: #333;
+/* Bordas tecnológicas com efeito neon para outras seções */
+section::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6f61, #ff9d2f, #ff6f61, #8e44ad);
+    border-radius: 20px;
+    z-index: -1;
+    animation: neon-border 2s infinite ease-in-out;
 }
 
-section p {
-    font-size: 16px;
-    color: #555;
+/* Efeito de hover nas seções */
+section:hover {
+    border: 3px solid transparent;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Elevação suave */
 }
 
 /* Estilo dos botões de redes sociais */
@@ -66,13 +179,17 @@ section p {
 
 .social-btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 12px 24px;
+    margin: 10px;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #555;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Fonte do botão */
 }
 
 /* Cores específicas para as redes sociais */
@@ -94,7 +211,9 @@ section p {
 
 /* Hover para os botões */
 .social-btn:hover {
-    opacity: 0.8;
+    background-color: #333;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Efeito de elevação */
 }
 
 /* Favicon - ícone de aba */
