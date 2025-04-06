@@ -1,6 +1,6 @@
 /* Estilos gerais do site */
 body {
-    background-color: #e0e0e0;  /* Cor de fundo mais suave (cinza claro) */
+    background-color: #f0f0f0;  /* Cor de fundo suave */
     font-family: Arial, sans-serif;
     color: #333;
     margin: 0;
@@ -12,7 +12,7 @@ header {
     background-color: #333; /* Cor de fundo escura do header */
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para o header */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo da logo */
@@ -27,9 +27,6 @@ header .logo img {
 nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #007bff; /* Azul suave para as abas */
-    margin: 0;
-    text-align: center;
 }
 
 nav ul li {
@@ -41,13 +38,6 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding: 15px 20px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background-color: #0056b3; /* Cor mais escura quando o mouse passa */
-    border-radius: 5px;
 }
 
 /* Estilo para a seção de Visualizar Arte */
@@ -57,7 +47,6 @@ nav ul li a:hover {
     margin-top: 30px;
     border-radius: 20px;
     text-align: center;
-    background-image: linear-gradient(45deg, #dadada, #e7e7e752);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,7 +57,7 @@ nav ul li a:hover {
 }
 
 .arte {
-    background-color: #FF6F61; /* Cor vibrante para visualizar arte */
+    background-color: #FF6F61; /* Cor vibrante */
     color: white;
     padding: 15px 30px;
     font-size: 20px;
@@ -86,52 +75,60 @@ nav ul li a:hover {
     transform: translateY(-3px); /* Efeito de elevação */
 }
 
+/* Estilo das seções */
+section {
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* Estilo dos botões de redes sociais */
 .social-buttons a {
     display: inline-block;
-    padding: 10px 30px;
-    margin: 10px;
-    border-radius: 50px;
-    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
     font-size: 16px;
     text-decoration: none;
-    font-weight: bold;
-    text-align: center;
+    margin: 10px;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
-.social-btn.tiktok {
-    background: linear-gradient(45deg, #000000, #69C9D0, #F5F5F5); /* Preto com azul claro e verde (cores do TikTok) */
+.social-buttons .tiktok {
+    background: linear-gradient(45deg, #000000, #1D1D1D);
 }
 
-.social-btn.instagram {
-    background: linear-gradient(45deg, #F58529, #D24F9B, #833AB4); /* Gradiente com tons de laranja, rosa e roxo (Instagram) */
+.social-buttons .instagram {
+    background: linear-gradient(45deg, #8a3ab9, #fccc63);
 }
 
-.social-btn.facebook {
-    background: linear-gradient(45deg, #3b5998, #8b9dc3); /* Azul e detalhes claros como no Facebook */
+.social-buttons .facebook {
+    background: linear-gradient(45deg, #3b5998, #8b9dc3);
 }
 
-.social-btn.whatsapp {
-    background: linear-gradient(45deg, #25D366, #128C7E); /* Verde do WhatsApp */
+.social-buttons .email {
+    background: linear-gradient(45deg, #d14836, #ff4b6a);
 }
 
-.social-btn.email {
-    background: linear-gradient(45deg, #f39c12, #f1c40f); /* Amarelo brilhante com um tom dourado */
-}
-
-/* Hover para os botões de redes sociais */
 .social-buttons a:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo do botão de WhatsApp */
+/* Estilo do botão de WhatsApp flutuante */
 .whatsapp-btn {
-    margin-top: 20px;
+    position: fixed; /* Faz o botão flutuar */
+    bottom: 20px;    /* Distância do fundo da tela */
+    right: 20px;     /* Distância da direita da tela */
+    z-index: 1000;   /* Garante que o botão fique sobre outros elementos */
     text-align: center;
 }
 
+/* Botão do WhatsApp */
 .whatsapp {
     background-color: #25D366; /* Cor do WhatsApp */
     color: white;
@@ -142,10 +139,15 @@ nav ul li a:hover {
     border-radius: 50px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
 }
 
+/* Ícone do WhatsApp */
 .whatsapp i {
-    margin-right: 10px;
+    font-size: 24px; /* Tamanho do ícone */
 }
 
 /* Hover para o botão do WhatsApp */
@@ -155,31 +157,20 @@ nav ul li a:hover {
     transform: translateY(-3px); /* Efeito de elevação */
 }
 
-/* Estilo do rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+/* Efeito de animação para o botão flutuante */
+.whatsapp-btn {
+    animation: float 2s ease-in-out infinite;
 }
 
-/* Estilo para as seções */
-section {
-    padding: 30px;
-    margin-top: 30px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 0;
-    background-image: linear-gradient(45deg, #dadada, #e7e7e7);
+/* Animação de flutuação */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move o botão para cima */
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
-
-/* Efeito de hover nas seções */
-section:hover {
-    border: 3px solid transparent;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); /* Elevação suave */
-}
-
